@@ -1,0 +1,875 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+  background-color: cornflowerblue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  width: 300px;
+  height: 300px;
+  background-color: cornflowerblue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container .emoji {
+  width: 90%;
+  height: 90%;
+  background-color: yellow;
+  border-radius: 50%;
+  position: relative;
+  box-shadow: 5px 5px 15px beige;
+  animation: moving;
+  animation-duration: 3s;
+  animation-timing-function: linear ease-in-out;
+  animation-iteration-count: infinite;
+  animation-delay: 10s;
+}
+
+.container .ibro {
+  width: 100%;
+  height: 40px;
+  position: absolute;
+  top: 23%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0% 17px;
+}
+
+.container .i1 {
+  width: 60px;
+  height: 70px;
+  background-color: yellow;
+  border-radius: 50%;
+  border-top: 2px solid rgb(190, 144, 58);
+}
+.container .top {
+  width: 100%;
+  height: fit-content;
+  position: absolute;
+  top: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0% 17px;
+}
+
+.container .top .eye {
+  width: 45px;
+  height: 58px;
+  background-color: #fff;
+  border: 1px solid gray;
+  border-radius: 50%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+
+  position: relative;
+}
+.container .eye .ball {
+  width: 30px;
+  height: 25px;
+  background-color: #000;
+  border-radius: 50%;
+  position: absolute;
+  animation-name: eye;
+  animation-duration: 6s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-delay: 2s;
+}
+
+.container .bottom {
+  width: 100%;
+  height: fit-content;
+  position: absolute;
+  bottom: 13%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0% 17px;
+}
+.container .lip {
+  width: 60%;
+  height: 70px;
+  border-bottom-left-radius: 150px;
+  border-bottom-right-radius: 150px;
+  background-color: rgb(230, 163, 39);
+}
+@keyframes moving {
+  0% {
+    transform: rotate(45deg);
+  }
+  25% {
+    transform: rotate(-45deg);
+  }
+  50% {
+    transform: rotate(90deg);
+  }
+  75% {
+    transform: rotate(-90deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes eye {
+  0% {
+    bottom: 4px;
+  }
+  25% {
+    left: 4px;
+  }
+  50% {
+    top: 4px;
+  }
+  75% {
+    right: 4px;
+  }
+  100% {
+    bottom: 4px;
+  }
+}
+
+/* second emoji */
+
+.container2 {
+  width: 300px;
+  height: 300px;
+  background-color: cornflowerblue;
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+
+.container2 .emoji {
+  width: 90%;
+  height: 90%;
+  background-color: yellow;
+  border-radius: 50%;
+  position: relative;
+  box-shadow: 5px 5px 15px beige;
+  animation-name: moving2;
+  animation-duration: 1s;
+  animation-timing-function: linear ease-in-out;
+  animation-iteration-count: infinite;
+  animation-delay: 9s;
+}
+
+.container2 .ibro {
+  width: 100%;
+  height: 30px;
+  position: absolute;
+  top: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0% 17px;
+}
+
+.container2 .i1 {
+  width: 50px;
+  height: 60px;
+  background-color: yellow;
+  border-radius: 50%;
+  margin-top: 70px;
+  border-top: 2px solid rgb(190, 144, 58);
+  animation: ibroMove;
+  animation-duration: 7s;
+  animation-delay: 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+.container2 .top {
+  width: 100%;
+  height: fit-content;
+  position: absolute;
+  top: 28%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0% 17px;
+}
+
+.container2 .top .eye {
+  width: 45px;
+  height: 58px;
+  background-color: #fff;
+  border: 1px solid gray;
+  border-radius: 50%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  position: relative;
+}
+.container2 .eye .ball {
+  width: 30px;
+  height: 25px;
+  background-color: #000;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.container2 .bottom {
+  width: 100%;
+  height: fit-content;
+  position: absolute;
+  bottom: 15%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0% 17px;
+}
+.container2 .lip {
+  width: 60%;
+  height: 70px;
+  border-bottom-left-radius: 150px;
+  border-bottom-right-radius: 150px;
+  background-color: rgb(230, 163, 39);
+  animation: liper;
+  animation-duration: 7s;
+  animation-delay: 1s;
+  animation-timing-function: linear ease-in-out;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes moving2 {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(10px);
+  }
+  50% {
+    transform: translateX(-10px);
+  }
+  75% {
+    transform: translateX(10px);
+  }
+  100% {
+    transition: translateX(0);
+  }
+}
+
+@keyframes ibroMove {
+  from {
+    width: 50px;
+    height: 60px;
+    margin-top: 70px;
+    border-top: 2px solid rgb(190, 144, 58);
+  }
+  to {
+    width: 42px;
+    height: 42px;
+    border-top: none;
+    margin-top: -10px;
+    border-bottom: 3px solid rgb(190, 144, 58);
+  }
+}
+
+@keyframes liper {
+  from {
+    height: 70px;
+    border-bottom-left-radius: 150px;
+    border-bottom-right-radius: 150px;
+  }
+  to {
+    width: 50%;
+    height: 30px;
+    border-radius: 20px;
+  }
+}
+
+/* Third emoji */
+
+.container3 {
+  width: 300px;
+  height: 300px;
+  background-color: cornflowerblue;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  animation-name: moving3;
+  animation-duration: 2s;
+  animation-timing-function: linear ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+h1 {
+  position: absolute;
+  z-index: 22;
+  color: red;
+  font-size: 50px;
+  left: 0;
+  top: 25%;
+  transform: rotate(-30deg);
+}
+h2 {
+  position: absolute;
+  z-index: 22;
+  color: red;
+  font-size: 50px;
+  right: 10%;
+  top: 3%;
+}
+h3 {
+  position: absolute;
+  z-index: 22;
+  color: red;
+  font-size: 50px;
+  right: 13%;
+  bottom: 3%;
+  transform: rotate(20deg);
+}
+
+.container3 .emoji {
+  width: 90%;
+  height: 90%;
+  background-color: yellow;
+  border-radius: 50%;
+  position: relative;
+  box-shadow: 5px 5px 15px beige;
+  animation: moving;
+  animation-duration: 3s;
+  animation-timing-function: linear ease-in-out;
+  animation-iteration-count: infinite;
+  animation-delay: 7s;
+}
+
+.container3 .ibro {
+  width: 100%;
+  height: 30px;
+  position: absolute;
+  top: 15%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0% 17px;
+}
+
+.container3 .i1 {
+  width: 50px;
+  height: 30px;
+  background-color: yellow;
+  border-radius: 50%;
+  margin-top: 70px;
+  border-top: 2px solid rgb(190, 144, 58);
+}
+.container3 .top {
+  width: 100%;
+  height: fit-content;
+  position: absolute;
+  top: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0% 17px;
+}
+
+.container3 .top .eye {
+  width: 50px;
+  height: 65px;
+  background-color: yellow;
+  border-top: 8px solid black;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.container3 .mid {
+  width: 100%;
+  height: 60px;
+  position: absolute;
+  bottom: 32%;
+  display: flex;
+  align-items: center;
+  padding: 0px 25px;
+  justify-content: space-between;
+}
+.container3 .mid .gola {
+  width: 18%;
+  height: 70%;
+  border-radius: 50%;
+  background-color: red;
+  filter: blur(20px);
+}
+
+.container3 .bottom {
+  width: 100%;
+  height: fit-content;
+  position: absolute;
+  bottom: 16%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0% 17px;
+}
+.container3 .lip {
+  width: 40%;
+  height: 80px;
+  background-color: yellow;
+  border-radius: 50%;
+  border-bottom: 7px solid;
+}
+
+@keyframes moving3 {
+  0% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  25% {
+    transform: translate(10px, 10px) rotate(10deg);
+  }
+  50% {
+    transform: translate(30px, 30px) rotate(0deg);
+  }
+  75% {
+    transform: translate(-10px, -10px) rotate(-10deg);
+  }
+  100% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+}
+
+/* fourth emoji */
+
+.container4 {
+  width: 300px;
+  height: 300px;
+  background-color: cornflowerblue;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  animation-name: moving4;
+  animation-duration: 4s;
+  animation-timing-function: linear ease-in-out;
+  animation-iteration-count: 1;
+  transform: 4s;
+  /* animation-delay: 9s; */
+}
+
+.container4 .emoji {
+  width: 90%;
+  height: 90%;
+  background-color: yellow;
+  border-radius: 50%;
+  position: relative;
+  box-shadow: 5px 5px 15px beige;
+  animation-name: moving2;
+  animation-duration: 1s;
+  animation-timing-function: linear ease-in-out;
+  animation-iteration-count: infinite;
+  /* animation-delay: 9s; */
+}
+
+.container4 .top {
+  width: 100%;
+  height: 30%;
+  position: absolute;
+  top: 23%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0% 22px;
+}
+
+.container4 .top .eye {
+  width: 50px;
+  height: 35px;
+  background-color: yellow;
+  border-top: 8px solid black;
+  border-radius: 50%;
+  display: flex;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.container4 .eye:first-child {
+  border: 1px solid gray;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+}
+.container4 .ball {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #000;
+}
+
+.mid {
+  width: 100%;
+  height: 60px;
+  position: absolute;
+  bottom: 32%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 77;
+}
+.mid .gola {
+  width: 18%;
+  height: 70%;
+  border-radius: 50%;
+  background-color: red;
+  filter: blur(20px);
+}
+
+.container4 .bottom {
+  width: 100%;
+  height: fit-content;
+  position: absolute;
+  bottom: 11%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  padding: 0% 17px;
+}
+.container4 .up_lip {
+  width: 80%;
+  height: 25px;
+  border-bottom-left-radius: 70%;
+  border-bottom-right-radius: 70%;
+  background-color: yellow;
+  z-index: 22;
+}
+.container4 .lip {
+  width: 70%;
+  height: 70px;
+  background: linear-gradient(black, rgb(85, 79, 79), rgb(37, 37, 37));
+  margin-top: -10px;
+  border-bottom-left-radius: 300px;
+  border-bottom-right-radius: 300px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  position: relative;
+}
+
+.container4 .tunk {
+  width: 50px;
+  height: 100px;
+  position: absolute;
+  top: 5px;
+  border-bottom-left-radius: 45%;
+  border-bottom-right-radius: 45%;
+  box-shadow: 3px 0px 5px #000;
+  background-color: red;
+  transform: scale3d(300px);
+  transform: rotate(3deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container4 .tunk .line {
+  width: 90px;
+  height: 2px;
+  background-color: rgba(80, 74, 74, 0.459);
+  box-shadow: 3px 3px 10px;
+  transform: rotate(92deg);
+}
+
+@keyframes moving4 {
+  0% {
+    transform: translate(100px, 100px);
+  }
+  25% {
+    transform: translate(-100px, -100px);
+  }
+
+  50% {
+    transform: translateX(200px);
+  }
+  75% {
+    transform: translateX(-200px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+/* fivth emoji */
+
+.container5 {
+  width: 300px;
+  height: 300px;
+  background-color: cornflowerblue;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.container5 .emoji {
+  width: 90%;
+  height: 90%;
+  background-color: yellow;
+  border-radius: 50%;
+  position: relative;
+  box-shadow: 5px 5px 15px beige;
+  animation-name: moving2;
+  animation-duration: 1s;
+  animation-timing-function: linear ease-in-out;
+  animation-iteration-count: infinite;
+  animation-delay: 2s;
+}
+
+.container5 .top {
+  width: 100%;
+  height: 30%;
+  position: absolute;
+  top: 23%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 10px;
+}
+
+.container5 .top .eye {
+  width: 35px;
+  height: 70px;
+  background-color: yellow;
+  border-top: 8px solid black;
+  border-radius: 50%;
+  display: flex;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.container5 .eye:first-child {
+  rotate: 90deg;
+}
+.container5 .eye:last-child {
+  rotate: -90deg;
+}
+
+.container5 .bottom {
+  width: 100%;
+  height: fit-content;
+  position: absolute;
+  bottom: 11%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  padding: 0% 17px;
+}
+.container5 .up_lip {
+  width: 80%;
+  height: 25px;
+  border-bottom-left-radius: 70%;
+  border-bottom-right-radius: 70%;
+  background-color: yellow;
+  z-index: 22;
+}
+.container5 .lip {
+  width: 70%;
+  height: 70px;
+  background: linear-gradient(black, rgb(85, 79, 79), rgb(37, 37, 37));
+  margin-top: -10px;
+  border-bottom-left-radius: 300px;
+  border-bottom-right-radius: 300px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  position: relative;
+}
+
+.container5 .tunk {
+  width: 50px;
+  height: 100px;
+  position: absolute;
+  top: 5px;
+  border-bottom-left-radius: 45%;
+  border-bottom-right-radius: 45%;
+  box-shadow: 3px 0px 5px #000;
+  background-color: red;
+  transform: scale3d(300px);
+  transform: rotate(3deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container5 .tunk .line {
+  width: 90px;
+  height: 2px;
+  background-color: rgba(80, 74, 74, 0.459);
+  box-shadow: 3px 3px 10px;
+  transform: rotate(92deg);
+}
+
+/* sixth emoji */
+
+.container6 {
+  width: 300px;
+  height: 300px;
+  background-color: cornflowerblue;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.container6 .emoji {
+  width: 90%;
+  height: 90%;
+  background-color: yellow;
+  border-radius: 50%;
+  position: relative;
+  box-shadow: 5px 5px 15px beige;
+  animation-name: moving4;
+  animation-duration: 1s;
+  animation-timing-function: linear ease-in-out;
+  animation-iteration-count: infinite;
+  animation-delay: 1s;
+}
+
+.container6 .ibro {
+  width: 100%;
+  height: 30px;
+  position: absolute;
+  top: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0% 17px;
+}
+
+.container6 .i1 {
+  width: 50px;
+  height: 30px;
+  background-color: yellow;
+  border-radius: 50%;
+  margin-top: 70px;
+  border-top: 2px solid rgb(190, 144, 58);
+}
+
+.container6 .top {
+  width: 100%;
+  height: 30%;
+  position: absolute;
+  top: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0 20px;
+}
+
+.container6 .top .eye {
+  width: 35px;
+  height: 70px;
+  background-color: yellow;
+  border-top: 8px solid black;
+  border-radius: 50%;
+  display: flex;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.container6 .bottom {
+  width: 100%;
+  height: fit-content;
+  position: absolute;
+  bottom: 11%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  padding: 0% 17px;
+}
+.container6 .up_lip {
+  width: 80%;
+  height: 25px;
+  border-bottom-left-radius: 70%;
+  border-bottom-right-radius: 70%;
+  background-color: yellow;
+  z-index: 22;
+}
+.container6 .lip {
+  width: 70%;
+  height: 70px;
+  background: linear-gradient(black, rgb(85, 79, 79), rgb(37, 37, 37));
+  margin-top: -10px;
+  border-bottom-left-radius: 300px;
+  border-bottom-right-radius: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+}
+
+.container6 .lip .top {
+  position: absolute;
+  top: 0;
+  width: 99%;
+  height: 40%;
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+  background-color: #fff;
+}
+.container6 .lip .bottom {
+  width: 50%;
+  height: 40%;
+  position: absolute;
+  bottom: 0%;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+  background-color: red;
+}
+
+.container9 {
+  width: 80vw;
+  height: 50vh;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #fff;
+  border-radius: 20px;
+  gap: 50px;
+}
+p:first-child {
+  font-size: 50px;
+  font-weight: 800;
+  color: blue;
+}
+p:last-child {
+  font-size: 20px;
+  font-weight: 600;
+  color: brown;
+}
+button {
+  padding: 10px 15px;
+  border: none;
+  background-color: rgb(0, 140, 255);
+  color: #fff;
+  border-radius: 10px;
+  cursor: pointer;
+}
